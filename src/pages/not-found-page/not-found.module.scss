@@ -1,0 +1,21 @@
+@use '@themes' as *;
+
+.container {
+  max-width: 1000px;
+  margin-top: 5rem;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back {
+  @include styled-box;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #00000089;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
+  }
+}

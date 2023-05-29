@@ -1,0 +1,53 @@
+@use '@themes' as *;
+
+.cart {
+  min-width: 150px;
+  min-height: 120px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.1s ease-in-out;
+
+  @include styled-box;
+
+  &:hover {
+    background: #ffffff1b;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.65);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    word-break: break-word;
+  }
+  &__link {
+    text-decoration: none;
+    word-break: break-all;
+    color: #ffffff4f;
+    &:hover {
+      color: #ffffff7c;
+    }
+  }
+  .commit {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+}
+.star {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  p {
+    font-size: 1.4rem;
+  }
+}

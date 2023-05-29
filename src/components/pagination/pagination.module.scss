@@ -1,0 +1,27 @@
+@use '@themes' as *;
+
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 auto;
+
+  &__item {
+    color: white;
+    float: left;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    transition: background .1s ease-in-out;
+    cursor: pointer;
+    
+    @include styled-box;
+  }
+}
+
+.active {
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  background: #000;
+}

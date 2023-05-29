@@ -1,0 +1,95 @@
+@use '@themes' as *;
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.cart {
+  @include styled-box;
+  padding: 2rem;
+  margin-left: 4rem;
+  width: 100%;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #213efa39;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+.star {
+  @include star-box;
+}
+
+.commit {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.owner {
+  &__avatar {
+    border-radius: 100px;
+    padding: 0.5rem;
+    background: #213efa39;
+    display: inline-flex;
+    overflow: hidden;
+
+    img {
+      border-radius: 100px;
+    }
+  }
+
+  &__nick {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+
+    a:hover {
+      color: #ffffff78;
+    }
+  }
+}
+
+.lang {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  &__item {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: #b221fa39;
+  }
+}
+
+.desc {
+  & :last-child {
+    margin-top: 1rem;
+    white-space: break-spaces;
+  }
+}
