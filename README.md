@@ -2,7 +2,7 @@
 
 ## Deploy version
 
-https://gh-repositories-catalog.vercel.app/
+https://repositories-catalog.vercel.app/
 
 ## Development
 
