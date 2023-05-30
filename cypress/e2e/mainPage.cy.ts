@@ -27,11 +27,11 @@ describe('MainPage Component', () => {
 
     cy.wait(1000)
 
-    cy.get('[data-testid="cart-list"]').within(() => {
-      cy.get('[data-testid="cart-item"]').each(cart => {
-        cy.get(cart)
+    cy.get('[data-testid="card-list"]').within(() => {
+      cy.get('[data-testid="card-item"]').each(card => {
+        cy.get(card)
           .contains(
-            '[data-testid="cart-item-title"]',
+            '[data-testid="card-item-title"]',
             /code.*clean|clean.*code/i
           )
           .should('exist')
@@ -39,7 +39,7 @@ describe('MainPage Component', () => {
     })
 
     cy.contains(
-      '[data-testid="cart-item-title"]',
+      '[data-testid="card-item-title"]',
       /code.*clean|clean.*code/i
     ).should('exist')
   })
