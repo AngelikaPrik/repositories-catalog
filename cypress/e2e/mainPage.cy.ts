@@ -28,14 +28,16 @@ describe('MainPage Component', () => {
     cy.wait(1000)
 
     cy.get('[data-testid="card-list"]').within(() => {
-      cy.get('[data-testid="card-item"]').each(card => {
-        cy.get(card)
-          .contains(
-            '[data-testid="card-item-title"]',
-            /code.*clean|clean.*code/i
-          )
-          .should('exist')
-      })
+      cy.get('[data-testid="card-item"]').each(
+        (card: keyof HTMLElementTagNameMap) => {
+          cy.get(card)
+            .contains(
+              '[data-testid="card-item-title"]',
+              /code.*clean|clean.*code/i
+            )
+            .should('exist')
+        }
+      )
     })
 
     cy.contains(
