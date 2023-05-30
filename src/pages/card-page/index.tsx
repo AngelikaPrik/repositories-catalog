@@ -7,9 +7,9 @@ import moment from 'moment'
 import star from '@assets/images/star.svg'
 import ghIcon from '@assets/images/github-icon.png'
 
-import style from './cart.module.scss'
+import style from './card.module.scss'
 
-export const CartPage = () => {
+export const CardPage = () => {
   const navigate = useNavigate()
   const { nameOfRep, login } = useParams()
 
@@ -29,8 +29,8 @@ export const CartPage = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className={style.cart}>
-          <div className={style.cart__top}>
+        <div className={style.card}>
+          <div className={style.card__top}>
             <h3>{data.repository.name}</h3>
             <div className={style.star}>
               <p>{data.repository.stargazerCount}</p>
@@ -38,7 +38,7 @@ export const CartPage = () => {
             </div>
           </div>
           <p className={style.commit}>Last commit: {dateCommit}</p>
-          <div className={style.cart__body}>
+          <div className={style.card__body}>
             <div className={style.owner}>
               <div className={style.owner__avatar}>
                 <img
@@ -48,14 +48,14 @@ export const CartPage = () => {
                 />
               </div>
               <div className={style.owner__nick}>
-                <p className={style.cart__subtitle}>Owner: </p>
+                <p className={style.card__subtitle}>Owner: </p>
                 <a href={data.repository.owner.url} target='_blank'>
                   {data.repository.owner.login}
                 </a>
               </div>
             </div>
             <div className={style.lang}>
-              <p className={style.cart__subtitle}>Languages: </p>
+              <p className={style.card__subtitle}>Languages: </p>
               <div className={style.lang__box}>
                 {data.repository.languages.nodes.map(
                   (l: Record<string, string>) => (
@@ -67,7 +67,7 @@ export const CartPage = () => {
               </div>
             </div>
             <div className={style.desc}>
-              <p className={style.cart__subtitle}>Description: </p>
+              <p className={style.card__subtitle}>Description: </p>
               <p>{data.repository.description}</p>
             </div>
           </div>

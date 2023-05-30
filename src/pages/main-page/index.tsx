@@ -1,7 +1,7 @@
 import { useEffect, useCallback, useMemo, ChangeEvent } from 'react'
 import { useLazyQuery } from '@apollo/client'
 import { observer } from 'mobx-react-lite'
-import { SearchField, Loader, Pagination, CartList } from '@components'
+import { SearchField, Loader, Pagination, CardList } from '@components'
 import { ErrorPage } from '@pages'
 import { GET_REPOSITORIES, GET_PAGE_INFO } from '@services/queries'
 import { repositoriesStore } from '@store'
@@ -33,7 +33,6 @@ export const MainPage = observer(() => {
       }).then(({ data }) => {
         const { nodes, repositoryCount } = data.search
         repositoriesStore.setAllRepositories(nodes)
-        console.log(JSON.stringify(data))
         repositoriesStore.setRepositoryCount(repositoryCount)
       })
     })
@@ -90,7 +89,7 @@ export const MainPage = observer(() => {
         {pageInfo.loading || loading ? (
           <Loader />
         ) : (
-          <CartList data={allRepositories} filter={filter} />
+          <CardList data={allRepositories} filter={filter} />
         )}
       </div>
       <Pagination

@@ -1,6 +1,6 @@
 export { Pagination } from './pagination'
 export { SearchField } from './search-field'
-export { CartItem } from './cart-item'
-export { CartList } from './cart-list'
+export { CardItem } from './card-item'
+export { CardList } from './card-list'
 export { Loader } from './loader'
 export { StyledButton } from './styled-button'

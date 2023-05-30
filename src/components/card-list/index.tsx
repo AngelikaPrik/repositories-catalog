@@ -1,17 +1,17 @@
 import { IListRepositories } from '@models/repositories-model'
-import { CartItem } from '../cart-item'
+import { CardItem } from '../card-item'
 
-import style from './cart-list.module.scss'
+import style from './card-list.module.scss'
 
-export const CartList = (props: PropsType) => {
+export const CardList = (props: PropsType) => {
   const { data, filter } = props
-  
+
   return (
     <>
       {data.length ? (
-        <div className={style.container} data-testid="cart-list">
+        <div className={style.container} data-testid='card-list'>
           {data.map(item => (
-            <CartItem key={item.url} {...item} />
+            <CardItem key={item.url} {...item} />
           ))}
         </div>
       ) : (
