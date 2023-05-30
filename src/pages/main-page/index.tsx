@@ -33,6 +33,7 @@ export const MainPage = observer(() => {
       }).then(({ data }) => {
         const { nodes, repositoryCount } = data.search
         repositoriesStore.setAllRepositories(nodes)
+        console.log(JSON.stringify(data))
         repositoriesStore.setRepositoryCount(repositoryCount)
       })
     })

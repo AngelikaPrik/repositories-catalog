@@ -10,11 +10,11 @@ export const CartItem = (props: IRepository) => {
   const dateCommit = moment(updatedAt).format('DD.MM.YYYY')
 
   return (
-    <div className={style.cart} data-testid="cart-list-item">
+    <div className={style.cart} data-testid="cart-item">
       <div>
         <div className={style.cart__top}>
           <Link to={`/${owner.login}/${name}`}>
-            <h3 className={style.cart__title}>{name}</h3>
+            <h3 data-testid="cart-item-title" className={style.cart__title}>{name}</h3>
           </Link>
           <div className={style.star}>
             <p>{stargazerCount}</p>

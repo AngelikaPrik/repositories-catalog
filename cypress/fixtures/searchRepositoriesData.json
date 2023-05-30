@@ -1,0 +1,76 @@
+{
+  "search": {
+    "nodes": [
+      {
+        "name": "clean-code-javascript",
+        "stargazerCount": 82381,
+        "owner": { "login": "ryanmcdermott" },
+        "url": "https://github.com/ryanmcdermott/clean-code-javascript",
+        "updatedAt": "2023-05-30T09:37:28Z"
+      },
+      {
+        "name": "clean-code-php",
+        "stargazerCount": 11558,
+        "owner": { "login": "piotrplenik" },
+        "url": "https://github.com/piotrplenik/clean-code-php",
+        "updatedAt": "2023-05-30T10:32:45Z"
+      },
+      {
+        "name": "clean-code-typescript",
+        "stargazerCount": 7464,
+        "owner": { "login": "labs42io" },
+        "url": "https://github.com/labs42io/clean-code-typescript",
+        "updatedAt": "2023-05-30T07:35:44Z"
+      },
+      {
+        "name": "clean-code-dotnet",
+        "stargazerCount": 6092,
+        "owner": { "login": "thangchung" },
+        "url": "https://github.com/thangchung/clean-code-dotnet",
+        "updatedAt": "2023-05-30T08:06:07Z"
+      },
+      {
+        "name": "Clean-Code-Notes",
+        "stargazerCount": 4699,
+        "owner": { "login": "JuanCrg90" },
+        "url": "https://github.com/JuanCrg90/Clean-Code-Notes",
+        "updatedAt": "2023-05-29T21:02:21Z"
+      },
+      {
+        "name": "clean-code-python",
+        "stargazerCount": 3817,
+        "owner": { "login": "zedr" },
+        "url": "https://github.com/zedr/clean-code-python",
+        "updatedAt": "2023-05-30T05:34:11Z"
+      },
+      {
+        "name": "clean-code-javascript",
+        "stargazerCount": 3374,
+        "owner": { "login": "felipe-augusto" },
+        "url": "https://github.com/felipe-augusto/clean-code-javascript",
+        "updatedAt": "2023-05-29T16:57:14Z"
+      },
+      {
+        "name": "clean-code-course-code",
+        "stargazerCount": 418,
+        "owner": { "login": "academind" },
+        "url": "https://github.com/academind/clean-code-course-code",
+        "updatedAt": "2023-05-27T14:02:29Z"
+      },
+      {
+        "name": "Clean-Code-Collection-Books",
+        "stargazerCount": 1619,
+        "owner": { "login": "sdcuike" },
+        "url": "https://github.com/sdcuike/Clean-Code-Collection-Books",
+        "updatedAt": "2023-05-30T06:13:11Z"
+      },
+      {
+        "name": "clean-code-javascript-es",
+        "stargazerCount": 1738,
+        "owner": { "login": "andersontr15" },
+        "url": "https://github.com/andersontr15/clean-code-javascript-es",
+        "updatedAt": "2023-05-29T18:51:15Z"
+      }
+    ]
+  }
+}
